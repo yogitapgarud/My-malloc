@@ -1,5 +1,5 @@
 //
-// Created by yogita on 2/14/19.
+// Created by Yogita Garud on 2/14/19.
 //
 
 struct block_meta {
@@ -13,7 +13,7 @@ struct block_meta {
 
 void *global_base = NULL;
 
-/*
+
 void *malloc(size_t size) {
     void *p = sbrk(0);
     void *request = sbrk(size);
@@ -23,7 +23,7 @@ void *malloc(size_t size) {
         assert(p == request);
         return p;
     }
-}*/
+}
 
 struct block_meta *find_free_block(struct block_meta **last, size_t size) {
     struct block_meta *current = global_base;
